@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "sqlAdministratorLogin": {
+        "value": "From Azure - SQL DB - person-selector-db-server"
+      },
+      "sqlAdministratorLoginPassword": {		
+        "value": "From Azure - SQL DB - person-selector-db-server"		
+      },
+      "transparentDataEncryption": {		
+        "value": "Enabled"		
+      }		
+    }
+  }

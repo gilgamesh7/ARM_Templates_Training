@@ -13,9 +13,39 @@ Code snippets created while using the book Azure Infrastructure as Code
 
 # ARM Templates
 ## create_storage_and_container.json
-- Command : az deployment group create \
+```
+az deployment group create \
   --resource-group rg-arm-templates-test \
   --template-file create_storage_and_container.json
+```
+
+## Azure SQL database in an existing server
+```
+az deployment group create \
+  --resource-group person-selector-rg \
+  --template-file create_db_on_existing_server.json \
+  --parameters create_db_on_existing_server.parameters.json
+```
+### Create a table & insert rows
+```
+
+CREATE TABLE Person
+(
+    PersonId INT IDENTITY PRIMARY KEY,
+    FirstName NVARCHAR(128) NOT NULL,
+    MiddelInitial NVARCHAR(10),
+    LastName NVARCHAR(128) NOT NULL,
+    DateOfBirth DATE NOT NULL
+)
+
+INSERT INTO [dbo].[Person](FirstName, MiddelInitial, LastName, DateOfBirth)
+VALUES ('Rajesh', 'V', 'Babu', '8/2/06')
+
+INSERT INTO [dbo].[Person](FirstName, MiddelInitial, LastName, DateOfBirth)
+VALUES ('Maya', 'M', 'Babu', '9/2/06')
+
+```
+
 
 # Testing Notes
 - If you on MacOS

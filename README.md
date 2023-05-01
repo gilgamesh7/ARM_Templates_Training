@@ -5,6 +5,7 @@ Code snippets created while using the book Azure Infrastructure as Code
 - Install ARM & BICEP extensions on VSCode
 - 
 # Links
+- [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts)
 - [Book - O'Reilly - Azure Infrastructure as Code](https://learning.oreilly.com/library/view/azure-infrastructure-as/9781617299421/)
 - [Define resources with Bicep, ARM templates, and Terraform AzAPI provider](https://learn.microsoft.com/en-nz/azure/templates/)
 - [Microsoft Course](Validate Azure resources by using the ARM Template Test Toolkit)
